@@ -17,21 +17,21 @@ namespace RESTFulSampleServer.HyperMedia
                 Action = HttpActionVerb.GET,
                 Href = urlHelper.Link("DefaultApi", url),
                 Rel = RelationType.self,
-                Type = RensponseTypeFormat.DefaultGet
+                Type = ReponseTypeFormat.DefaultGet
             });
             content.Links.Add(new HyperMediaLink()
             {
                 Action = HttpActionVerb.POST,
                 Href = urlHelper.Link("DefaultApi", url),
                 Rel = RelationType.self,
-                Type = RensponseTypeFormat.DefaultPost
+                Type = ResponseTypeFormat.DefaultPost
             });
             content.Links.Add(new HyperMediaLink()
             {
                 Action = HttpActionVerb.PUT,
                 Href = urlHelper.Link("DefaultApi", url),
                 Rel = RelationType.self,
-                Type = RensponseTypeFormat.DefaultPost
+                Type = ReponseTypeFormat.DefaultPost
             });
             content.Links.Add(new HyperMediaLink()
             {
